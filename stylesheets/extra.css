@@ -81,12 +81,18 @@ and background color
       /* Changed */
   .md-header-nav__title {
     color: black;
-    font-weight: bold;
+    font-weight: 500;
   }
 
   .md-tabs__link {
       color: black;
-      font-weight: bold;
+      font-weight: 600;
+  }
+
+  .center {
+    margin: auto;
+    width: 80vw;
+    text-align: center;
   }
 
   .md-nav__title {
