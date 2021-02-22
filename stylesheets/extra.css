@@ -90,7 +90,7 @@ and background color
   }
 
   .center {
-    margin: auto;
+    padding-right: 35vw;
     width: 80vw;
     text-align: center;
   }
