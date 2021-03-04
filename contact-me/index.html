@@ -368,7 +368,7 @@ async function submitForm(e, form) {
         headers: headers,
         body: JSON.stringify(jsonBody)
     }).then(data => {
-        console.log(data)
+        alert("Email successfuly sent.");
     }).catch(err => alert(err))
 
 }
