@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Shrey Batra</title>
+    <link>https://examplesite.com/</link>
+    <description>Recent content on Shrey Batra</description>
+    <image>
+      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://examplesite.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://examplesite.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.com/about/</guid>
+      <description>About me Hii..! Currently I am working as a Software Engineer @ LinkedIn.
+I specialise in Software Architecture, Databases Design and Data Modelling, Data Flow Automation, API Development and Scaling.
+Currently I am focused in creating my database, CrankDB, which is a ultra lightweight in memory Key-Value based Document Store (150 µs avg query time, micro seconds)
+Certifications  Certified Kubernetes Application Developer MongoDB Certified Developer Associate  Conferences and Public Speaking I have been a speaker at various conferences like -</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://examplesite.com/masterclass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://examplesite.com/masterclass/</guid>
+      <description>Shrey&amp;rsquo;s Masterclass Program This is a 2 weeks (14 days) hands-on course to learn any technical framework with challenge based learning. In each track, every day a set of topics and resources would be given to study, including blogs, articles, tutorials, docs, etc.
+Along with the topics, you would also be given a daily challenge/task to complete which would involve practically implementing the day&amp;rsquo;s tasks.
+This would enable you to learn by implementation.</description>
+    </item>
+    
+  </channel>
+</rss>
