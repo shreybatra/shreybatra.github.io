@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,gBAGE,WACF,CAEA,eAKE,eACF,CAEA,mBACE,wBACF","file":"main.e5d0ec70.chunk.css","sourcesContent":["html,\nbody,\n#root {\n  height: 100%;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n  font-weight: 300;\n}\n\n.custom-background {\n  background-color: paleturquoise;\n}\n"]}
