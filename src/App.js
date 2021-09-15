@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container } from "react-bootstrap";
+import { Switch, Route, HashRouter } from "react-router-dom";
+import { AboutMe } from "./components/AboutMe";
+import { ContactMe } from "./components/ContactMe";
+import { Header } from "./components/Header";
+import { MainPage } from "./components/MainPage";
+import { Masterclass } from "./components/Masterclass";
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Container fluid className="p-0">
+        <Header />
+        <Switch>
+          <Route path="/masterclass">
+            <Masterclass />
+          </Route>
+          <Route path="/about">
+            <AboutMe />
+          </Route>
+          <Route path="/contact">
+            <ContactMe />
+          </Route>
+          <Route path="/" exact>
+            <MainPage />
+          </Route>
+          <Route>Not Found</Route>
+        </Switch>
+      </Container>
+    </HashRouter>
   );
-}
-
-export default App;
+};
