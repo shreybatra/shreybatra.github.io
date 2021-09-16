@@ -85,7 +85,7 @@ export const ContactMe = () => {
               <h1 className="display-6 text-center">
                 Connect with me on Social Media
               </h1>
-              <Row className="mt-5 gap-3 ms-3">
+              <Row className="mt-5 gap-3 mx-3">
                 <Button
                   href="https://www.linkedin.com/in/shreybatra/"
                   target="_"

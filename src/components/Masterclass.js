@@ -164,7 +164,7 @@ export const Masterclass = () => {
       <Row md={3} xs={1} className="mt-2 g-4">
         <Col>
           <Card className="h-100">
-            <Card.Header>Suman Arjani, IIIT Gwalior'22</Card.Header>
+            <Card.Header>Saksham Arjani, IIIT Gwalior'22</Card.Header>
             <Card.Body>
               <Card.Text>
                 I think the idea of challenge based learning is great, because
@@ -203,7 +203,7 @@ export const Masterclass = () => {
         <Col>
           <Card className="h-100">
             <Card.Header>
-              Vivek K, Software Engineer @ Bajaj Finserv Health
+              Divyansh Srivastava, Software Engineer @ NCR Corporation
             </Card.Header>
             <Card.Body>
               <Card.Text>
