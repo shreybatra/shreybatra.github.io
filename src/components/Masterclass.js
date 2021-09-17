@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import MetaTags from "react-meta-tags";
 import {
   Card,
   Col,
@@ -61,6 +62,10 @@ export const Masterclass = () => {
 
   return (
     <Container>
+      <MetaTags>
+        <title>Shrey's Masterclass</title>
+        <meta name="description" content="Shrey's masterclasses...!" />
+      </MetaTags>
       <h1 className="display-1 text-center my-3">Shrey's Masterclass</h1>
       <Row>
         <Col md={8}>
