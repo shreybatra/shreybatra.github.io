@@ -11,6 +11,8 @@ import {
   ListGroup,
   Spinner,
   ListGroupItem,
+  Image,
+  Badge,
 } from "react-bootstrap";
 
 export const Masterclass = () => {
@@ -70,37 +72,51 @@ export const Masterclass = () => {
       <Row>
         <Col md={8}>
           <Card className="mt-3">
+            <Card.Header as="h2" className="custom-background text-white">
+              Masterclass Program
+            </Card.Header>
             <Card.Body>
-              <Card.Title as="h2">Program</Card.Title>
               <Card.Text>
-                This is a 2 weeks (14 days) hands-on course to learn any
-                technical framework with challenge based learning. In each
-                track, every day a set of topics and resources would be given to
-                study, including blogs, articles, tutorials, docs, etc.
+                I teach various technologies with{" "}
+                <strong>Hands-On Challenges</strong>. These are a 2 weeks (14
+                days) Hands-On courses to learn any technical framework with
+                challenge based learning. In each track, every day a set of
+                topics and resources would be given to study, including blogs,
+                articles, tutorials, docs, etc.
                 <br />
-                <br /> Along with the topics, you would also be given a daily
-                challenge/task to complete which would involve practically
-                implementing the day’s tasks. This would enable you to learn by
-                implementation. Weekly doubt sessions would also be provided for
+                <br /> The goal everyday would be to study the day's topic
+                yourself and solve the Challenge given, which would involve
+                implementing the task in a language/framework. This would enable
+                you to learn by implementation. Weekly{" "}
+                <strong>doubt sessions</strong> would also be provided for
                 better understanding.
               </Card.Text>
             </Card.Body>
           </Card>
 
           <Card className="mt-3">
+            <Card.Header as="h2" className="custom-background text-white">
+              Tracks
+            </Card.Header>
             <Card.Body>
-              <Card.Title as="h2">Tracks</Card.Title>
               <ListGroup variant="flush">
-                <ListGroup.Item>1. MongoDB - Noob to Advance</ListGroup.Item>
-                <ListGroup.Item>2. Docker - Noob to Advance</ListGroup.Item>
                 <ListGroup.Item>
-                  3. Kubernetes - Noob to Advance (Developer focused)
+                  1. MongoDB - Noob (Basic CRUD and Aggregation)
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  4. API Development - Flask / Python
+                  2. MongoDB - Advanced (Aggregations, Indexes and Data
+                  Modelling)
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  5. Cloud Computing (AWS/Azure) - Basics
+                  3. Kubernetes (Application Developer)
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  4. Queue Systems and PubSub (Basics) -- Redis, Kafka and AWS
+                  SQS
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  5. ElasticSearch (Basics) - Indexing, searching, Analyzers and
+                  Tokenizers (based on use case)
                 </ListGroup.Item>
               </ListGroup>
             </Card.Body>
@@ -108,17 +124,27 @@ export const Masterclass = () => {
         </Col>
         <Col md={4}>
           <Card className="mt-3">
-            <Card.Header as="h2">Details</Card.Header>
+            <Card.Header as="h2" className="custom-background text-white">
+              Details
+            </Card.Header>
             <Card.Body>
-              <strong>Next Batch:</strong> 5th September, 2021
+              <strong>Next Batch:</strong> 10th December, 2021
               <br />
               <strong>Fees:</strong> INR 500/- per topic you want to enrol in.
             </Card.Body>
           </Card>
 
           <Card className="mt-3">
-            <Card.Header as="h2">Subscribe</Card.Header>
-            <Card.Body>
+            <Card.Header
+              className="custom-background text-white border-0"
+              as={Button}
+              href="https://forms.gle/6i6Gyjck4yYnUhyz6"
+              target="_blank"
+            >
+              <h2 className="my-3">Sign Up Now</h2>
+            </Card.Header>
+
+            <Card.Body className="d-none">
               <Card.Subtitle className="mb-2">
                 Interested for the next batch? Subscribe here to know when next
                 batch starts..!
@@ -146,30 +172,122 @@ export const Masterclass = () => {
           </Card>
 
           <Card className="mt-3">
-            <Card.Header as="h2">Stats</Card.Header>
+            <Card.Header as="h2" className="custom-background text-white">
+              Stats
+            </Card.Header>
             <Card.Body>
-              <ListGroup variant="flush">
+              <ListGroup variant="flush" className="text-center">
                 <ListGroupItem>
-                  <h6>Total Students Enrolled</h6>
-                  155
+                  <h5>Total Students Enrolled</h5>
+                  <h4>
+                    <Badge bg="danger">250+</Badge>
+                  </h4>
                 </ListGroupItem>
                 <ListGroupItem>
-                  <h6>Total Batches</h6>4
-                </ListGroupItem>
-                <ListGroupItem>
-                  <h6>Completion Rate</h6>
-                  84%
+                  <h5>Total Batches</h5>
+                  <h4>
+                    <Badge bg="danger">4</Badge>
+                  </h4>
                 </ListGroupItem>
               </ListGroup>
             </Card.Body>
           </Card>
         </Col>
       </Row>
+      <h1 className="display-6 text-center mt-4">Who took my Masterclass?</h1>
+      <h1 className="display-6 text-center fs-4">
+        Folks from all these companies have taken my Masterclass
+      </h1>
+      <Row className="mt-3">
+        <Col md={3} className="text-center mt-3">
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png"
+            width="50%"
+          />
+        </Col>
+        <Col md={3} className="text-center mt-3">
+          <Image
+            src="https://www.backbase.com/wp-content/uploads/2020/05/Microsoft-Logo-PNG-Transparent.png"
+            width="70%"
+          />
+        </Col>
+        <Col md={3} className="text-center mt-3">
+          <Image
+            src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Logo.svg.original.svg"
+            width="60%"
+          />
+        </Col>
+        <Col md={3} className="text-center mt-3">
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/0/09/Zomato_company_logo.png"
+            width="50%"
+          />
+        </Col>
+        <Col md={3} className="text-center mt-3">
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/HSBC_logo_%282018%29.svg/2560px-HSBC_logo_%282018%29.svg.png"
+            width="50%"
+          />
+        </Col>
+        <Col md={3} className="text-center mt-3">
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png"
+            width="50%"
+          />
+        </Col>
+
+        <Col md={3} className="text-center mt-3">
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png"
+            width="50%"
+          />
+        </Col>
+
+        <Col md={3} className="text-center mt-3">
+          <Image
+            src="https://cdn.freelogovectors.net/wp-content/uploads/2018/07/makemytrip-logo.png"
+            width="50%"
+          />
+        </Col>
+      </Row>
+      <h1 className="display-6 text-center mt-1 fs-5 text-muted fs-normal">
+        any many more..
+      </h1>
       <h1 className="display-6 text-center mt-5">Student Reviews</h1>
       <Row md={3} xs={1} className="mt-2 g-4">
         <Col>
           <Card className="h-100">
-            <Card.Header>Saksham Arjani, IIIT Gwalior'22</Card.Header>
+            <Card.Header className="custom-background text-white">
+              Akshita Dudani, Software Engineer @ Google
+            </Card.Header>
+            <Card.Body>
+              <Card.Text>
+                Challenge based learning really helped me learn and explore new
+                stacks and concepts. This is a unique way where it's not about
+                hand holding but challenging yourself to implement the day's
+                topic. Practical concepts stay with you.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card className="h-100">
+            <Card.Header className="custom-background text-white">
+              Garima Luthra, SRE @ LinkedIn
+            </Card.Header>
+            <Card.Body>
+              <Card.Text>
+                It has been very helpful and informative. I loved the way the
+                course was designed to help us have hands on experience.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col>
+          <Card className="h-100">
+            <Card.Header className="custom-background text-white">
+              Saksham Arjani, Product @ Zomato
+            </Card.Header>
             <Card.Body>
               <Card.Text>
                 I think the idea of challenge based learning is great, because
@@ -181,7 +299,9 @@ export const Masterclass = () => {
         </Col>
         <Col>
           <Card className="h-100">
-            <Card.Header>Ritika, Software Engineer @ HSBC</Card.Header>
+            <Card.Header className="custom-background text-white">
+              Ritika, Software Engineer @ HSBC
+            </Card.Header>
             <Card.Body>
               <Card.Text>
                 They have been very helpful actually and are I really liked the
@@ -193,7 +313,7 @@ export const Masterclass = () => {
         </Col>
         <Col>
           <Card className="h-100">
-            <Card.Header>
+            <Card.Header className="custom-background text-white">
               Vivek K, Software Engineer @ Bajaj Finserv Health
             </Card.Header>
             <Card.Body>
@@ -207,8 +327,8 @@ export const Masterclass = () => {
         </Col>
         <Col>
           <Card className="h-100">
-            <Card.Header>
-              Divyansh Srivastava, Software Engineer @ NCR Corporation
+            <Card.Header className="custom-background text-white">
+              Divyansh Srivastava, SWE @ NCR Corporation
             </Card.Header>
             <Card.Body>
               <Card.Text>

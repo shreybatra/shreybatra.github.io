@@ -2,6 +2,8 @@ html,
 body,
 #root {
   height: 100%;
+  background-color: #fffcf7;
+  color: #393d3f;
 }
 
 h1,
@@ -13,5 +15,13 @@ h5 {
 }
 
 .custom-background {
-  background-color: paleturquoise;
+  background-color: #188fa7;
+}
+
+.custom-background1 {
+  background-color: #fffcf7;
+}
+
+.custom-dark {
+  background-color: #188fa7;
 }

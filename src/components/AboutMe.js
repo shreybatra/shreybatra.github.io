@@ -10,7 +10,7 @@ export const AboutMe = () => {
       <Container>
         <Row>
           <Col md={8}>
-            <Card className="mt-3" border="white">
+            <Card className="mt-3 custom-background1" border="white">
               <Card.Body>
                 <Card.Title as="h2">Bio</Card.Title>
                 <Card.Text>
@@ -24,25 +24,25 @@ export const AboutMe = () => {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card border="white">
+            <Card border="white" className="custom-background1">
               <Card.Body>
                 <Card.Title as="h2">Certifications</Card.Title>
                 <ListGroup variant="flush">
-                  <ListGroup.Item>
+                  <ListGroup.Item className="custom-background1">
                     Certified Kubernetes Application Developer
                   </ListGroup.Item>
-                  <ListGroup.Item>
+                  <ListGroup.Item className="custom-background1">
                     MongoDB Certified Developer Associate
                   </ListGroup.Item>
                 </ListGroup>
               </Card.Body>
             </Card>
-            <Card border="white">
+            <Card border="white" className="custom-background1">
               <Card.Body>
                 <Card.Title as="h2">Work Experience</Card.Title>
                 <ListGroup variant="flush">
                   <ExpCard
-                    heading="Software Engineer @ LinkedIn, Big Data"
+                    heading="Software Engineer @ LinkedIn, Core Engineering"
                     subTitle="May 2021 - Present"
                   >
                     <ul>
@@ -53,12 +53,10 @@ export const AboutMe = () => {
                         metadata across LinkedIn.
                       </li>
                       <li>
-                        Working to onboard Notebook entities on Datahub. Datahub
-                        is also open sourced by LinkedIn and checked out{" "}
-                        <a href="https://datahubproject.io/" target="_">
-                          here
-                        </a>
-                        .
+                        Working to support reverse regex lookup and conflict
+                        resolution for 200M+ files in HDFS for GDPR compliance
+                        and Purge policies. This is based on custom algorithm
+                        built on TRIE and Glob patterns.
                       </li>
                     </ul>
                   </ExpCard>
@@ -112,7 +110,7 @@ export const AboutMe = () => {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="mt-3">
+            <Card className="mt-3 custom-background1">
               <Card.Header as="h2">Skills</Card.Header>
               <Card.Body>
                 <Card.Subtitle className="mt-3">Languages</Card.Subtitle>
@@ -141,28 +139,29 @@ export const AboutMe = () => {
                 </MiniButton>
               </Card.Body>
             </Card>
-            <Card className="mt-3">
+
+            <Card className="mt-3 custom-background1">
               <Card.Header as="h2">Conferences</Card.Header>
               <Card.Body>
                 <ListGroup variant="flush">
-                  <ListGroup.Item>
+                  <ListGroup.Item className="custom-background1">
                     <h6>LinkedIn Big Data Bangalore - July, 2021</h6>
                     Document Databases Data Modelling Patterns and Anti-Patterns
                   </ListGroup.Item>
-                  <ListGroup.Item>
+                  <ListGroup.Item className="custom-background1">
                     <h6>MongoDB World Conference - July, 2021</h6>
                     Real Time Analytics using MongoDB Change Streams
                   </ListGroup.Item>
-                  <ListGroup.Item>
+                  <ListGroup.Item className="custom-background1">
                     <h6>MongoDB World Conference (MongoDB.live) 2020</h6>
                     Migrating Heavy Cron Jobs to MongoDB Realm Triggers and
                     Worker Functions
                   </ListGroup.Item>
-                  <ListGroup.Item>
+                  <ListGroup.Item className="custom-background1">
                     <h6>Facebook Developer Circles, June 2019</h6>
                     Slack bot and MongoDB Realm Serverless integration
                   </ListGroup.Item>
-                  <ListGroup.Item>
+                  <ListGroup.Item className="custom-background1">
                     <h6>MongoDB MUG Delhi NCR, December 2020</h6>
                     Modelling with MongoDB
                   </ListGroup.Item>

@@ -80,27 +80,28 @@ export const ContactMe = () => {
       <h1 className="display-3 pb-3 text-center">Contact Me</h1>
       <Card className="h-100 mt-5">
         <Row>
-          <Col md={4} className="bg-dark text-white">
+          <Col md={4} className="custom-dark text-white">
             <Card.Body className="h-100 mt-5 pt-5">
               <h1 className="display-6 text-center">
                 Connect with me on Social Media
               </h1>
               <Row className="mt-5 gap-3 mx-3">
                 <Button
+                  variant="light"
                   href="https://www.linkedin.com/in/shreybatra/"
                   target="_"
                 >
                   <i className="bi bi-linkedin" /> LinkedIn
                 </Button>{" "}
                 <Button
-                  variant="success"
+                  variant="light"
                   href="https://github.com/shreybatra"
                   target="_"
                 >
                   <i className="bi bi-github" /> Github
                 </Button>{" "}
                 <Button
-                  variant="info"
+                  variant="light"
                   href="https://twitter.com/ShreyBatra"
                   target="_"
                 >

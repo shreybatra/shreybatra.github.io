@@ -14,7 +14,12 @@ export const Header = () => {
   };
 
   return (
-    <Navbar bg="light" collapseOnSelect expand="md">
+    <Navbar
+      className="custom-background"
+      variant="dark"
+      collapseOnSelect
+      expand="md"
+    >
       <Container>
         <Navbar.Brand as={Link} to="/">
           <Image
