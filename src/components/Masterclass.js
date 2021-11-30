@@ -186,7 +186,7 @@ export const Masterclass = () => {
                 <ListGroupItem>
                   <h5>Total Batches</h5>
                   <h4>
-                    <Badge bg="danger">4</Badge>
+                    <Badge bg="danger">5</Badge>
                   </h4>
                 </ListGroupItem>
               </ListGroup>
